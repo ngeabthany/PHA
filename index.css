@@ -1,0 +1,39 @@
+.Text ul li {
+    margin-bottom: 10px;
+}
+
+ul {
+    width: 200px;
+    margin-bottom: 100px;
+    position: relative;
+  }
+  
+  ul li {
+    list-style-type: none;
+    cursor: pointer;
+  }
+  
+  ul li::before {
+    position: absolute;
+    content: "";
+    left: 15px;
+    width: 24px;
+    height: 24px;
+    background-image: url("./unchek.png");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  ul li.check {
+    text-decoration: line-through;
+
+  }
+  
+  ul li.check::before {
+    background-image: url("./check.webp");
+  }
+  ul li span{
+    position: absolute;
+    right: 0;
+  }
+ 
